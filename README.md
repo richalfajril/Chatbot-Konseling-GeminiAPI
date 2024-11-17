@@ -1,7 +1,3 @@
-Berikut adalah template **README.md** untuk dokumentasi proyek Anda. Anda dapat langsung menyalin dan menempelkannya ke file `README.md` di root folder proyek Anda:
-
----
-
 # Dopi - Psikiater Virtual
 
 Dopi adalah aplikasi psikiater virtual berbasis AI yang menggunakan **Google Generative AI** untuk memberikan respons empatik terhadap masalah psikologis pengguna. Proyek ini memungkinkan Anda menjalankan aplikasi di lingkungan lokal dengan UI interaktif berbasis HTML, CSS, dan JavaScript.

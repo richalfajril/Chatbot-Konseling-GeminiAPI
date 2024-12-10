@@ -1,9 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #eef2f7;
   margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,49 +10,74 @@ body {
 
 .chat-container {
   background: #fff;
-  border-radius: 10px;
-  width: 400px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 420px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 h1 {
   text-align: center;
   color: #4a90e2;
+  margin: 10px 0;
+  padding: 15px;
 }
 
 .chat-box {
-  max-height: 300px;
+  flex: 1;
   overflow-y: auto;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .chat-box .message {
-  margin: 5px 0;
+  max-width: 80%; /* Menyesuaikan panjang bubble */
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  position: relative;
 }
 
 .chat-box .user {
-  text-align: right;
-  color: #4a90e2;
+  align-self: flex-end;
+  background-color: #d1e7ff;
+  color: #004085;
+  border-radius: 15px 15px 0 15px; /* Sudut yang berbeda */
 }
 
 .chat-box .dopi {
-  text-align: left;
-  color: #555;
+  align-self: flex-start;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 15px 15px 15px 0; /* Sudut yang berbeda */
+}
+
+.chat-box .message .formatted {
+  white-space: pre-wrap;
 }
 
 #chat-form {
   display: flex;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ddd;
 }
 
 #message-input {
   flex: 1;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
 }
 
 button {
@@ -63,9 +86,25 @@ button {
   border: none;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 14px;
 }
 
 button:hover {
   background: #357ab8;
+}
+
+/* Animasi pesan */
+.chat-box .message {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

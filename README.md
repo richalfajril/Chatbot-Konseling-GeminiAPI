@@ -36,7 +36,7 @@ project/
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
-- **API:** [Google Generative AI](https://developers.google.com/generative-ai)
+- **API:** [Google Gemini AI]([https://developers.google.com/generative-ai](https://aistudio.google.com/prompts/new_chat))
 
 ---
 

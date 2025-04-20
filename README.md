@@ -1,4 +1,4 @@
-# Dopi - Psikiater Virtual
+# Dopi - AI Agents Psychologist
 
 Dopi adalah aplikasi psikiater virtual berbasis AI yang menggunakan Google Generative AI, khususnya Google Gemini API melalui Google AI Studio, untuk memberikan respons empatik terhadap masalah psikologis pengguna. Proyek ini memungkinkan Anda menjalankan aplikasi di lingkungan lokal dengan UI interaktif berbasis HTML, CSS, dan JavaScript.
 
